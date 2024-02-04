@@ -1,0 +1,52 @@
+.wireframe-container {
+  display: flex;
+  max-width: 800px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto; /* Centré avec une marge automatique sur les côtés */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet 3D léger */
+}
+
+.wireframe-image-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative; /* Position relative pour le positionnement absolu des enfants */
+}
+
+.wireframe-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wireframe-text-container {
+  flex: 1;
+  padding: 20px;
+  display: flex; /* Utilisation de Flexbox pour le centrage vertical */
+  flex-direction: column; /* Les enfants sont empilés verticalement */
+  justify-content: center; /* Centrage vertical des enfants */
+}
+
+.wireframe-text-box {
+  margin-bottom: 15px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ebee; /* Couleur de fond ajustée pour correspondre à l'illustration */
+}
+
+.container {
+  width: 80%;
+  margin: auto; /* Centrage du conteneur */
+  overflow: hidden;
+}
+
+.header, .footer {
+  background: #333; /* Couleur de fond pour l'en-tête et le pied de page */
+  color: #ffffff; /* Couleur du texte pour l'en-tête et le pied de page */
+  padding: 20px 0;
+  text-align: center;
+}

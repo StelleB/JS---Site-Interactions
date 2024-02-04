@@ -1,0 +1,64 @@
+.wireframe-container {
+  display: flex;
+  max-width: 800px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto; /* Center the container on the page */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+}
+
+.wireframe-image-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.wireframe-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wireframe-text-container {
+  flex: 1;
+  padding: 20px;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+}
+
+.wireframe-text-box {
+  margin-bottom: 15px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ebee; /* Adjust the background color as needed */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.container {
+  width: 80%;
+  margin: auto; /* Center the container */
+  overflow: hidden;
+}
+
+.header, .footer {
+  background: #333;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Additional styles for a responsive design */
+@media (max-width: 600px) {
+  .wireframe-container {
+    flex-direction: column;
+  }
+
+  .wireframe-image-container, .wireframe-text-container {
+    width: 100%; /* Make image and text container full width */
+  }
+}
